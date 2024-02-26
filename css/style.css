@@ -96,19 +96,46 @@ a{
     display: flex;
 }
 
+.al-center{
+    align-items: center;
+}
+
 /* HEADER */
 
 header{
     background-color: var(--orange);
+    display: flex;
+
     /* debug */
-    height: 50px;
+    min-height: 70px;
 }
 
-.header-s{
-    /* background-color: aqua; */
-    
-    /* debug */
-    height: 50px;
+.header-col{
+    width: calc(100% / 3);
+}
+
+.identity li{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.logo-card{
+    justify-content: center;
+}
+
+.logo{
+    width: 40%;
+}
+
+.nav-card{
+    justify-content: end;
+}
+
+.nav li{
+    color: var(--white);
+    margin-left: 8px;
 }
 
 /* MAIN */
@@ -126,9 +153,6 @@ main{
 .col{
     width: calc(100% / 3);
 
-    /* debug */
-    background-color: aqua;
-    border: 1px solid black;
 }
 
 .card{
