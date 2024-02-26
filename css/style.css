@@ -2,6 +2,7 @@
     --red: red;
     --green: green;
     --white: white;
+    --orange: #FF6900;
 }
 
 /* RESET */
@@ -15,9 +16,19 @@ img{
     max-width: 100%;
 }
 
-.m-0-auto{
-    margin: 0 auto;
+ul{
+    list-style: none;
 }
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 /* COMMON */
@@ -40,6 +51,10 @@ img{
 
 
 /* UTILITIES */
+
+.m-0-auto{
+    margin: 0 auto;
+}
 
 .w-70{
     width: 70%;
@@ -77,6 +92,25 @@ img{
     z-index: 10;
 }
 
+.flex-container{
+    display: flex;
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--orange);
+    /* debug */
+    height: 50px;
+}
+
+.header-s{
+    /* background-color: aqua; */
+    
+    /* debug */
+    height: 50px;
+}
+
 /* MAIN */
 
 main{
@@ -84,7 +118,6 @@ main{
 }
 
 .main-s{
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -94,13 +127,14 @@ main{
     width: calc(100% / 3);
 
     /* debug */
+    background-color: aqua;
     border: 1px solid black;
-    /* background-color: yellow; */
 }
 
-/* .card{
+.card{
+    margin-bottom: 20px;
     padding: 10px;
-} */
+}
 
 .card-img{
     position: relative;
