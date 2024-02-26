@@ -73,6 +73,10 @@ img{
     text-decoration: line-through;
 }
 
+.z-10{
+    z-index: 10;
+}
+
 /* MAIN */
 
 main{
@@ -103,7 +107,6 @@ main{
 }
 
 .img-overlay{
-
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -118,3 +121,19 @@ main{
     text-transform: uppercase;
 }
 
+.img-main{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-img:hover .img-hover{
+    z-index: 2;
+}
