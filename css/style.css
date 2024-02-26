@@ -3,6 +3,7 @@
     --green: green;
     --white: white;
     --orange: #FF6900;
+    --black: #1A1A1A;
 }
 
 /* RESET */
@@ -29,7 +30,9 @@ a{
     color: inherit;
 }
 
-
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
 
 /* COMMON */
 
@@ -105,9 +108,13 @@ a{
 header{
     background-color: var(--orange);
     display: flex;
-
-    /* debug */
-    min-height: 70px;
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    color: var(--white);
 }
 
 .header-col{
@@ -115,7 +122,7 @@ header{
 }
 
 .identity li{
-    color: var(--white);
+
     font-weight: bold;
     font-size: 1.2rem;
     margin-right: 8px;
@@ -126,7 +133,7 @@ header{
 }
 
 .logo{
-    width: 40%;
+    width: 30%;
 }
 
 .nav-card{
@@ -134,13 +141,14 @@ header{
 }
 
 .nav li{
-    color: var(--white);
+
     margin-left: 8px;
 }
 
 /* MAIN */
 
 main{
+    margin-top: 30px;
     padding: 50px 0px;
 }
 
@@ -194,4 +202,34 @@ main{
 
 .card-img:hover .img-hover{
     z-index: 2;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    padding: 30px 0px;
+}
+
+.footer-col{
+    width: calc(100% / 2);
+}
+
+.social-card{
+    text-align: right;
+}
+
+h3, h4{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.copyright li{
+    margin-right: 10px;
+}
+
+.social li{
+    margin-left: 10px;
 }
