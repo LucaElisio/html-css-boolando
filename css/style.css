@@ -1,3 +1,9 @@
+:root{
+    --red: red;
+    --green: green;
+    --white: white;
+}
+
 /* RESET */
 *{
     padding: 0;
@@ -5,6 +11,110 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
+.m-0-auto{
+    margin: 0 auto;
+}
+
+
 /* COMMON */
 
+.overlay{
+    display: inline-block;
+    padding: 2px 6px;
+}
+
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: inline-block;
+    background-color: var(--white);
+    padding: 10px;
+    font-size: 30px;
+    background-color: var(--white);
+}
+
+
 /* UTILITIES */
+
+.w-70{
+    width: 70%;
+}
+
+.color-white{
+    color: var(--white)
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.d-block{
+    display: block;
+}
+
+.c-red{
+    color: red;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.lineth{
+    text-decoration: line-through;
+}
+
+/* MAIN */
+
+main{
+    padding: 50px 0px;
+}
+
+.main-s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: calc(100% / 3);
+
+    /* debug */
+    border: 1px solid black;
+    /* background-color: yellow; */
+}
+
+/* .card{
+    padding: 10px;
+} */
+
+.card-img{
+    position: relative;
+}
+
+.img-overlay{
+
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.brand, .discounted-price, .price{
+    font-size: 1rem;
+}
+
+.card-name{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
